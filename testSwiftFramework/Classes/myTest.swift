@@ -20,7 +20,7 @@ public class myTest {
     }
     
     
-    init(_ val1: String? = nil, val2: Int? = 0) {
+   public init(_ val1: String? = nil, val2: Int? = 0) {
         self.val1 = val1
         self.val2 = val2
     }
