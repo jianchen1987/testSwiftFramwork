@@ -1,5 +1,6 @@
 import XCTest
-import testSwiftFramework
+@testable import testSwiftFramework
+
 
 class Tests: XCTestCase {
     
@@ -15,6 +16,8 @@ class Tests: XCTestCase {
     
     func testExample() {
         // This is an example of a functional test case.
+        let test = myTest("123", val2: 10)
+        test.test1()
         XCTAssert(true, "Pass")
     }
     

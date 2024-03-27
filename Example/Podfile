@@ -1,13 +1,16 @@
 use_frameworks!
 
+source "git@github.com:jianchen1987/cj-specs.git"
+
 platform :ios, '10.0'
 
 target 'testSwiftFramework_Example' do
   pod 'testSwiftFramework', :path => '../'
+#pod 'testSwiftFramework'
 
   target 'testSwiftFramework_Tests' do
     inherit! :search_paths
-
+    pod 'testSwiftFramework', :path => '../'
     
   end
 end

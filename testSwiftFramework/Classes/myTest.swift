@@ -1,7 +1,7 @@
 
 import Foundation
 
-class myTest {
+public class myTest {
     
     public var val1: String?
     
@@ -15,10 +15,16 @@ class myTest {
         return 5
     }
     
-    
-    init(val1: String? = nil) {
-        self.val1 = val1
+    fileprivate var var5: Double {
+        return 4.4
     }
+    
+    
+    init(_ val1: String? = nil, val2: Int? = 0) {
+        self.val1 = val1
+        self.val2 = val2
+    }
+    
     
     public func test1() {
         print("this is public func");
